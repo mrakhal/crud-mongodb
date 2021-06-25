@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 //config mongodb
 
 let { MongoClient, ObjectID } = require("mongodb");
-let urlConnection = `mongodb+srv://mrakhalf-5293:q1r58sv4123@mongo-mrakhalf.oyuby.mongodb.net/toko?retryWrites=true&w=majority`;
+let urlConnection = `mongodb+srv://<username>:<password>@mongo-mrakhalf.oyuby.mongodb.net/toko?retryWrites=true&w=majority`;
 
 let mongo = new MongoClient(urlConnection, {
   useNewUrlParser: true,
